@@ -9,6 +9,7 @@ app = Flask(__name__)
 def hello(name=None):
     return render_template('hello.html', name=name)
 
+
 class ProxyFix(object):
     def __init__(self, app):
         self.app = app
