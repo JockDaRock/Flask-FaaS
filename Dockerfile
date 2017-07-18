@@ -10,6 +10,7 @@ RUN pip install flask
 ENV fprocess="python3 handler.py"
 
 COPY handler.py .
+COPY templates ./templates
 HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
 
 CMD ["fwatchdog"]
