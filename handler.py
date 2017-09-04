@@ -45,4 +45,5 @@ class HeaderRewriterFix(object):
 
 if __name__ == '__main__':
     app.wsgi_app = ProxyFix(app.wsgi_app)
+    app.wsgi_app = HeaderRewriteFix(app.wsgi_app)
     CGIHandler().run(app)
