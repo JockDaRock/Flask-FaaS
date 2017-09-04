@@ -30,7 +30,7 @@ class ProxyFix(object):
         return self.app(environ, start_response)
 
     
- class HeaderRewriterFix(object):
+class HeaderRewriterFix(object):
 
     def __init__(self, app, remove_headers=None, add_headers=None):
         self.app = app
