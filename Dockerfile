@@ -1,6 +1,6 @@
 FROM python:alpine
 
-ADD https://github.com/alexellis/faas/releases/download/0.5.6-alpha/fwatchdog /usr/bin
+ADD https://github.com/alexellis/faas/releases/download/0.5.8-alpha/fwatchdog /usr/bin
 RUN chmod +x /usr/bin/fwatchdog
 
 WORKDIR /root/

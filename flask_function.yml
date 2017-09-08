@@ -1,0 +1,8 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  func_flasky:
+    fprocess: python3 handler.py
+    image: jockdarock/flaskfaas
